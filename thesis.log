@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.6.26)  5 JUL 2021 01:21
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.6.26)  5 JUL 2021 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\def\withdoi{1}  \def\excludefirstpage{1}  \input{thesis} thesis
+**\def\excludefirstpage{1}  \input{thesis} thesis
  (./thesis.tex (./ntuthesis.cls
 Document Class: ntuthesis 2013/04/23 Thesis template for National Taiwan Univer
 sity
@@ -574,8 +574,8 @@ File: ppxetex.def 2021/03/06 v0.5t Pdfpages driver for XeTeX (AM)
 \c@AM@survey=\count314
 \AM@templatesizebox=\box66
 )
-LaTeX Info: Redefining \title on input line 42.
-LaTeX Info: Redefining \author on input line 43.
+LaTeX Info: Redefining \title on input line 48.
+LaTeX Info: Redefining \author on input line 49.
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
@@ -1381,12 +1381,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33650 strings out of 476443
- 681717 string characters out of 5813447
- 1514919 words of memory out of 5000000
- 53553 multiletter control sequences out of 15000+600000
+ 33651 strings out of 476443
+ 681703 string characters out of 5813447
+ 1514937 words of memory out of 5000000
+ 53554 multiletter control sequences out of 15000+600000
  579069 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 136i,10n,139p,1921b,4689s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 136i,10n,139p,1904b,4689s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on thesis.pdf (23 pages).

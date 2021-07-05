@@ -17,7 +17,13 @@
 \DeclareRobustCommand{\@classen}{Thesis}
 \DeclareRobustCommand{\@classzh}{論文}
 \DeclareOption{phd}{\gdef\@typeen{Doctoral}\gdef\@typezh{博士}\gdef\@classen{Dissertation}}
-\DeclareOption{bachelor}{\gdef\@typeen{Bachelor}\gdef\@typezh{學士}}
+
+% setting titles to include Bachelor's thesis
+\DeclareRobustCommand{\@covertitlezh}{\@typezh{}\@classzh}
+\DeclareRobustCommand{\@covertitleen}{\@typeen{} \@classen}
+\DeclareRobustCommand{\@preclasszh}{學位}
+\DeclareOption{bachelor}{\gdef\@typeen{Bachelor Degree}\gdef\@typezh{學士班學生}\gdef\@covertitleen{\textbf{Bachelor's Degree Thesis}}\gdef\@covertitlezh{\textbf{學士班學生}論文}\gdef\@preclasszh{}}
+
 \DeclareOption{proposal}{\gdef\@typeen{Proposal for Doctoral}\gdef\@typezh{博士論文計畫提案書}\gdef\@classen{Dissertation}\gdef\@classzh{}}
 \DeclareOption{phd}{\gdef\@typeen{Doctoral}\gdef\@typezh{博士}\gdef\@classen{Dissertation}}
 \DeclareOption{proposal}{\gdef\@typeen{Proposal for Doctoral}\gdef\@typezh{博士論文計畫提案書}\gdef\@classen{Dissertation}\gdef\@classzh{}}
@@ -51,6 +57,7 @@
 \DeclareRobustCommand{\doi}[1]{\gdef\@doi{#1}}
 \DeclareRobustCommand{\keywords}[2]{\gdef\@keywordsen{#1}\gdef\@keywordszh{#2}}
 
+
 \abstractname{Abstract}{摘要}
 \acknowledgements{Acknowledgements}{誌謝}
 
@@ -61,13 +68,13 @@
     \begin{center}
       \fontsize{18}{27}\selectfont
       \@universityzh\@collegezh\@institutezh\par
-        \@typezh{}\@classzh\par
+        \@covertitlezh\par
       {\fontsize{14}{21}\selectfont
         \@instituteen\par
         \@collegeen\par}
       {\fontsize{16}{24}\selectfont
         \@universityen\par
-        \@typeen{} \@classen\par}
+        \@covertitleen\par}
       \vspace{\fill}
       \@titlezh\par
       \@titleen\par
@@ -173,7 +180,7 @@
   \else
     \begin{singlespace}
     \begin{center}
-      \fontsize{24}{36}\selectfont\@universityzh\@typezh{}學位\@classzh\\
+      \fontsize{24}{36}\selectfont\@universityzh\@typezh{}\@preclasszh\@classzh\\
       口試委員會審定書\par
       \vspace{0.5cm}
       {\fontsize{20}{30}\selectfont\@titlezh\par\@titleen\par}
@@ -182,7 +189,7 @@
     \vspace{1cm}
     \fontsize{15}{24}\selectfont
 \hspace{30pt}本論文係\@authorzh{}君 (\@studentid)
-在\@universityzh\@institutezh{}完成之\@typezh{}學位\@classzh，%
+在\@universityzh\@institutezh{}完成之\@typezh{}\@preclasszh\@classzh，%
 於民國 \@yearzh 年 \@monthzh 月 \@day 日%
 承下列考試委員審查通過及口試及格，特此證明\par
     \end{singlespace}
