@@ -1,14 +1,17 @@
 %% font settings
 
 % Chinese font
-\setCJKmainfont[AutoFakeBold=2,AutoFakeSlant=.2]{DFKai-SB}
+% use 標楷體 on your computer
+\setCJKmainfont[AutoFakeBold=2,AutoFakeSlant=.2]{DFKai-SB} 
 
 % English font
+% see README for more information
 \usepackage[T1]{fontenc}			% use this if European fonts (ec) package is installed
+\usepackage{newtxtext} 
 \usepackage[lite,subscriptcorrection,slantedGreek,nofontinfo]{mtpro2}
 \renewcommand{\rmdefault}{ptm}		% set Times as the default text font
-\usepackage[scaled=0.92]{helvet}	% set Helvetica as the sans-serif font
 \usepackage{bm}						% for bold greek letters in math mode
+\usepackage[scaled=0.92]{helvet}	% set Helvetica as the sans-serif font
  
 % \setmainfont[Mapping=rijke]{Times New Roman}
 % \setsansfont{Arial}
