@@ -47,7 +47,7 @@ $(MAIN)-with-pass.pdf: $(MAIN).pdf
 endif
 
 clean:
-	$(RM) *.log *.aux *.dvi *.lof *.lot *.toc *.bbl *.blg
+	$(RM) *.log *.aux *.dvi *.lof *.lot *.toc *.bbl *.blg *.bcf *-blx.bib *.out *.run.xml *.xwm 
 
 clean-pdf:
 	$(RM) -f $(MAIN).pdf $(MAIN)-with-pass.pdf
