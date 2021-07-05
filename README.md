@@ -25,11 +25,12 @@ care a lot about beautiful equations like me :D). It doesn't seem to be
 clear whether it is required that math font uses Times New Roman (or other
 Times-like fonts), but if you want to make math font match with text font,
 you will need to change the math font, most likely with an additional package.
-What works for me the best is `mtpro2` (lite, also set the text font so
-no need to `\setmainfont` again) with `newtxtext` and `bm`, but the installation
-of `mtpro2` is a but complicated. As an alternative, you may also use `unicode-math`
+What works for me the best is `mtpro2` with `bm` (for bold symbols), but the 
+installation of `mtpro2` is a but complicated. As an alternative, you may 
+also use `unicode-math`
 with `\setmathfont{TeX Gyre Termes Math}`, if you don't care about the ugly
-integral symbol. You may find many other solutions on [google](https://www.google.com/search?q=LaTeX+math+font+times) too. 
+integral symbol. You may find many other solutions on 
+[google](https://www.google.com/search?q=LaTeX+math+font+times) too. 
 
 As for `mtpro2`, you can download the lite version (which is sufficient for most
 people) [here](https://www.ctan.org/pkg/mtp2lite) (the link on the 

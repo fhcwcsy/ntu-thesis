@@ -6,12 +6,17 @@
 
 % English font
 % see README for more information
-\usepackage[T1]{fontenc}			% use this if European fonts (ec) package is installed
-\usepackage{newtxtext} 
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+% set text font as Times
+% load before mtpro2 the for correct mathrm font
+\renewcommand{\rmdefault}{ptm} 
+
 \usepackage[lite,subscriptcorrection,slantedGreek,nofontinfo]{mtpro2}
-\renewcommand{\rmdefault}{ptm}		% set Times as the default text font
-\usepackage{bm}						% for bold greek letters in math mode
-\usepackage[scaled=0.92]{helvet}	% set Helvetica as the sans-serif font
+\usepackage{bm}
+\usepackage[scaled=0.92]{helvet}
+ 
  
 % \setmainfont[Mapping=rijke]{Times New Roman}
 % \setsansfont{Arial}
