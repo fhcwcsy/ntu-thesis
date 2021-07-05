@@ -11,19 +11,20 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ntuthesis}[2013/04/23 Thesis template for National Taiwan University]
 
-% Derived from book class
+%% Define basic variables Derived from book class
 \DeclareRobustCommand{\@typeen}{Master}
 \DeclareRobustCommand{\@typezh}{碩士}
 \DeclareRobustCommand{\@classen}{Thesis}
 \DeclareRobustCommand{\@classzh}{論文}
 \DeclareOption{phd}{\gdef\@typeen{Doctoral}\gdef\@typezh{博士}\gdef\@classen{Dissertation}}
 
-% setting titles to include Bachelor's thesis
+% additional title settings to include Bachelor's thesis
 \DeclareRobustCommand{\@covertitlezh}{\@typezh{}\@classzh}
 \DeclareRobustCommand{\@covertitleen}{\@typeen{} \@classen}
 \DeclareRobustCommand{\@preclasszh}{學位}
 \DeclareOption{bachelor}{\gdef\@typeen{Bachelor Degree}\gdef\@typezh{學士班學生}\gdef\@covertitleen{\textbf{Bachelor's Degree Thesis}}\gdef\@covertitlezh{\textbf{學士班學生}論文}\gdef\@preclasszh{}}
 
+% original title settings
 \DeclareOption{proposal}{\gdef\@typeen{Proposal for Doctoral}\gdef\@typezh{博士論文計畫提案書}\gdef\@classen{Dissertation}\gdef\@classzh{}}
 \DeclareOption{phd}{\gdef\@typeen{Doctoral}\gdef\@typezh{博士}\gdef\@classen{Dissertation}}
 \DeclareOption{proposal}{\gdef\@typeen{Proposal for Doctoral}\gdef\@typezh{博士論文計畫提案書}\gdef\@classen{Dissertation}\gdef\@classzh{}}
@@ -60,6 +61,8 @@
 
 \abstractname{Abstract}{摘要}
 \acknowledgements{Acknowledgements}{誌謝}
+
+%% Cover page
 
 \DeclareRobustCommand{\makecover}{
   \begin{titlepage}
@@ -172,6 +175,8 @@
       \raisebox{-0.25em}{\rotatebox{90}{\@yearzh{}} \rotatebox{90}{\hspace{0.25em}\@monthzh{}}}
     \end{tabular}}
 }
+
+%% 口試委員審定書
 
 \DeclareRobustCommand{\makecertification}{
   \if@openright\cleardoublepage\else\clearpage\fi
